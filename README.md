@@ -10,8 +10,10 @@
 
 
 
-After init.sh finishes, got to http://web.myapp.docker:8000/
+After init.sh finishes, go to http://web.myapp.docker:8000/
 
+
+### Clean up
 
 When you are done with your environment, run:
 
