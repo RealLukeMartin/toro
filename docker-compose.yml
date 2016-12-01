@@ -6,8 +6,8 @@ services:
     environment:
       MYSQL_RANDOM_ROOT_PASSWORD: 1
       MYSQL_DATABASE: drupal
-      MYSQL_USER: root
-      MYSQL_PASSWORD: root
+      MYSQL_USER: drupal
+      MYSQL_PASSWORD: drupal
     volumes:
       - ./docker-runtime/mariadb:/var/lib/mysql
 
