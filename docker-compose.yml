@@ -16,7 +16,7 @@ services:
     environment:
       PHP_SITE_NAME: dev
       PHP_HOST_NAME: localhost:8000
-      PHP_DOCROOT: drupal
+      PHP_DOCROOT: drupal/web
       PHP_SENDMAIL_PATH: /usr/sbin/sendmail -t -i -S mailhog:1025
     volumes:
       - ./:/var/www/html
@@ -26,7 +26,7 @@ services:
     environment:
       NGINX_SERVER_NAME: localhost
       NGINX_UPSTREAM_NAME: php
-      NGINX_DOCROOT: drupal
+      NGINX_DOCROOT: drupal/web
       DRUPAL_VERSION: 8 # Allowed: 7, 8.
     volumes_from:
       - php
