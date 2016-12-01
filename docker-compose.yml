@@ -16,6 +16,7 @@ services:
     environment:
       PHP_SITE_NAME: dev
       PHP_HOST_NAME: localhost:8000
+      PHP_DOCROOT: drupal
       PHP_SENDMAIL_PATH: /usr/sbin/sendmail -t -i -S mailhog:1025
     volumes:
       - ./:/var/www/html
